@@ -1,0 +1,7 @@
+
+target 'JVRKeyValueObserver', :exclusive => true do
+  pod "JVRKeyValueObserver", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
