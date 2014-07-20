@@ -20,7 +20,7 @@ This pod was created following the excellent [KVO article](http://www.objc.io/is
 
 @end
 
-@implementation JVAGoalsViewController
+@implementation MyViewController
 
 - (void)viewDidLoad {
 	// Subscribe for change notifications with a given selector
