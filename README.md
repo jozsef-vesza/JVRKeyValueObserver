@@ -22,7 +22,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-József Vesza, jozsef.vesza@outlook.com
+József Vesza, [@j_vesza](https://twitter.com/j_vesza)
 
 ## License
 
