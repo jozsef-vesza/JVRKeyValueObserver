@@ -11,7 +11,33 @@ This pod was created following the excellent [KVO article](http://www.objc.io/is
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```objc
+
+@interface MyViewController ()
+
+@property (nonatomic, strong) id modelObserverToken;
+@property (nonatomic, strong) MyObservableObject *observableObject;
+
+@end
+
+@implementation JVAGoalsViewController
+
+- (void)viewDidLoad {
+	// Subscribe for change notifications with a given selector
+	self.modelObserverToken = [JVRKeyValueObserver
+                               observeObject:self.observableObject
+                               keyPath:@"observableProperty" target:self
+                               selector:@selector(modelDidChange:)
+                               options:NSKeyValueObservingOptionNew];
+}
+
+- (void)modelDidChange:(NSDictionary *)change {
+	// Handle changes...
+}
+
+@end
+
+```
 
 ## Installation
 
